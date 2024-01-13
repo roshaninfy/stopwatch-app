@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Stopwatch App</title>
+    <!-- <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: blue;
+            background: plum;
+        }
+        .container {
+            text-align: center;
+        }
+        .display {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+    </style> -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Stopwatch</h1>
+    <div class="display" id="display">00:00:00</div>
+    <button class="btn btn-primary" onclick="start()">Start</button>
+    <button class="btn btn-primary" onclick="Stop()">Stop</button>
+    <button class="btn btn-secondary" onclick="reset()">Reset</button>
+</div>
+
+<!-- <script>
+    let timer;
+    let isRunning = false;
+    let seconds = 0, minutes = 0, hours = 0;
+
+ 
+    function start() {
+            timer = setInterval(updateDisplay, 1000);
+            isRunning = true;
+        
+    }
+    function Stop() {
+            clearInterval(timer);
+            isRunning = false;
+        
+    }
+
+    function reset() {
+        clearInterval(timer);
+        isRunning = false;
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        //updateDisplay();
+        const display = document.getElementById('display');
+        display.textContent = pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+    }
+
+
+
+    function updateDisplay() {
+        seconds++;
+        console.log(seconds);
+        if (seconds === 60) {
+            seconds = 0;
+            console.log("inside if",seconds);
+            minutes++;
+            if (minutes === 60) {
+                minutes = 0;
+                hours++;
+            }
+        }
+
+        const display = document.getElementById('display');
+        display.textContent = pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+    }
+
+    function pad(num) {
+        return num < 10 ? '0' + num : num;
+    }
+</script> -->
+<script src="app.js"></script>
+</body>
+</html>
