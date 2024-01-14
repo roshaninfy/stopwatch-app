@@ -17,18 +17,12 @@ This is a simple stopwatch project implemented in vanilla javascript. It provide
 
 - Need chrome browser or any browser to run html file.
 
-### Installation
+## How to Use
 
-1. Clone the repository: `git clone https://github.com/yourusername/stopwatch-project.git`
-2. Change directory: `cd stopwatch-project`
-3. Run using any server or by opening index.html file in any browser.
+1. Clone the repository to your local machine:
 
-## Usage
+   ```bash
+   git clone https://github.com/roshaninfy/stopwatch-app.git
 
-[Provide instructions on how to use the stopwatch. Include code snippets or command examples if applicable.]
-
-```bash
-# Example usage commands or code snippets
-http://127.0.0.1:5500/stopwatch-project/
-![Alt text](image.png)
-
+# Hosted Code
+    The code is hosted on GitHub at https://roshaninfy.github.io/stopwatch-app/
